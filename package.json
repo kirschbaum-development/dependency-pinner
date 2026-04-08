@@ -1,0 +1,42 @@
+{
+  "name": "dependency-pinner",
+  "version": "0.1.0",
+  "description": "Pin dependency versions to lock file resolutions for supply-chain security",
+  "type": "module",
+  "bin": {
+    "dependency-pinner": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "security",
+    "dependencies",
+    "pin",
+    "supply-chain",
+    "npm",
+    "yarn",
+    "bun",
+    "composer"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "8.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "25.5.2",
+    "tsup": "8.5.1",
+    "typescript": "6.0.2",
+    "vitest": "4.1.3"
+  }
+}
