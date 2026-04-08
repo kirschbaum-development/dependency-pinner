@@ -23,7 +23,7 @@ Scan the current directory for manifest files (`package.json`, `composer.json`).
 - `yarn.lock` exists → yarn
 - `bun.lock` exists → bun
 
-If multiple JS lock files exist, treat each as a separate manager. If `package.json` exists but no JS lock file is found, proceed to step 2.
+If multiple JS lock files exist, ask the user which package manager to use (since they all share the same `package.json`). If `package.json` exists but no JS lock file is found, ask the user which package manager they use, then proceed to step 2 to generate the lock file.
 
 ### Step 2: Generate Missing Lock Files
 
