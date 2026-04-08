@@ -1,10 +1,10 @@
 {
-  "name": "@kirschbaum-development/dependency-pinner",
+  "name": "@kirschbaum-development/dep-lock",
   "version": "0.1.0",
   "description": "Pin dependency versions to lock file resolutions for supply-chain security",
   "type": "module",
   "bin": {
-    "dependency-pinner": "./dist/index.js"
+    "dep-lock": "./dist/index.js"
   },
   "files": [
     "dist"

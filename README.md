@@ -1,4 +1,4 @@
-# dependency-pinner
+# dep-lock
 
 Pin dependency versions to their lock file resolutions for supply-chain security.
 
@@ -18,7 +18,7 @@ This tool automates both. It reads your lock file to find the versions you're ac
 Run in your project root:
 
 ```bash
-npx @kirschbaum-development/dependency-pinner
+npx @kirschbaum-development/dep-lock
 ```
 
 The tool will:
